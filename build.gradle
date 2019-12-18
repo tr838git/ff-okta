@@ -23,9 +23,14 @@ apply plugin:"org.grails.grails-gsp"
 repositories {
     mavenLocal()
     maven { url "https://repo.grails.org/grails/core" }
+    maven { url "https://dl.bintray.com/moksamedia/plugins" }
 }
 
 dependencies {
+    compile "org.grails.plugins:spring-security-core:3.2.1"
+    compile "org.grails.plugins:spring-security-oauth2:1.1.0"
+    compile "spring.security.oauth2.okta:spring-security-oauth2-okta:0.1"
+
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"
