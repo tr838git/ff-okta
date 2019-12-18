@@ -28,6 +28,20 @@ endpoints:
 
 ---
 grails:
+    plugin:
+        springsecurity:
+            oauth2:
+                active: true
+                registration:
+                    roleNames: ['ROLE_USER']
+                providers:
+                    okta:
+                        api_key: '0oa28hdzaueiGXOGZ357'
+                        api_secret: 'YOHxhtUlz1lH5EiBjhyjkR_85diPI3BHUAQRRzWz'
+                        userInfoUrl: 'https://dev-546452.okta.com/oauth2/default/v1/userinfo'
+                        authorizeUrl: 'https://dev-546452.okta.com/oauth2/default/v1/authorize'
+                        tokenUrl: 'https://dev-546452.okta.com/oauth2/default/v1/token'
+                        scopes: 'email profile openid'
     mime:
         disable:
             accept:
