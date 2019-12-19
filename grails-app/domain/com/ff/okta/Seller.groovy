@@ -4,4 +4,6 @@ class Seller {
 
     static constraints = {
     }
+
+
 }

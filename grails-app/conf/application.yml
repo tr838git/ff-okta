@@ -33,7 +33,7 @@ grails:
             oauth2:
                 active: true
                 registration:
-                    roleNames: ['ROLE_USER']
+                    roleNames: ['ROLE_SELLER']
                 providers:
                     okta:
                         api_key: '0oa28hdzaueiGXOGZ357'
